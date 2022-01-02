@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="VisualStudioTemplates2022.20c7e30c-b328-46e2-9187-7154e101695b" Version="2.0" Language="en-US" Publisher="Firefly" />
+        <Identity Id="VisualStudioTemplates2022.20c7e30c-b328-46e2-9187-7154e101695b" Version="1.0" Language="en-US" Publisher="Firefly" />
         <DisplayName>VisualStudioTemplates2022</DisplayName>
         <Description xml:space="preserve">Templates and Snippets for Migrated Applications</Description>
     </Metadata>
@@ -18,8 +18,8 @@
     </Installation>
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
-      <Dependency Id="Microsoft.VisualStudio.MPF.16.0" DisplayName="Visual Studio MPF 16.0" d:Source="Installed" Version="[16.0,17.0)" />
-  </Dependencies>
+        <Dependency Id="Microsoft.VisualStudio.MPF.16.0" DisplayName="Visual Studio MPF 16.0" d:Source="Installed" Version="[16.0,17.0)" />
+    </Dependencies>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Async" d:TargetPath="|Async;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="BaseControl" d:TargetPath="|BaseControl;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
