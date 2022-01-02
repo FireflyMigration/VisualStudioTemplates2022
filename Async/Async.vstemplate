@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Async</Name>
+    <Description>Async class to run controllers Async</Description>
+    <Icon>Async.ico</Icon>
+    <TemplateID>c348c7d7-582d-4086-be50-7231d7d2b6ae</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>Async.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+	  <References/>
+	  <ProjectItem SubType="Code" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Async.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

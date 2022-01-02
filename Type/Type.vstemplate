@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Type</Name>
+    <Description>Type Template</Description>
+    <Icon>Type.ico</Icon>
+    <TemplateID>4042641b-2016-4546-a202-9e780139b9ad</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>Type.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References/>
+	<ProjectItem SubType="Code" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Type.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

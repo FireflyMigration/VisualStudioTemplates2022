@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Public Method</Title>
+			<Shortcut>met</Shortcut>
+			<Description>Adds a public method to a class</Description>
+			<Author>Firefly Ltd</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>Member Type</ToolTip>
+					<Default>Text</Default>
+				</Literal>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Method Name</ToolTip>
+					<Default>MethodName</Default>
+				</Literal>
+				
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[public $type$ $name$()	=> $end$;]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

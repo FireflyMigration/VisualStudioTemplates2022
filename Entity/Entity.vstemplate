@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Entity</Name>
+    <Description>An Entity</Description>
+    <Icon>Entity.ico</Icon>
+    <TemplateID>ffa81acd-b777-4edf-8f30-6f8181eca13c</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>Entity.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References/>
+	<ProjectItem SubType="Code" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Entity.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

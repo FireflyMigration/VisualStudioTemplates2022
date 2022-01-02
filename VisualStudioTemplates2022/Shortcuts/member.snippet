@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Public Member</Title>
+			<Shortcut>mem</Shortcut>
+			<Description>Adds a public member to a class</Description>
+			<Author>Firefly Ltd</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>Member Type</ToolTip>
+					<Default>TextColumn</Default>
+				</Literal>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Member Name</ToolTip>
+					<Default>MemberName</Default>
+				</Literal>
+				
+			</Declarations>
+			<Code Language="csharp"><![CDATA[public readonly $type$ $name$ = new $type$ ($end$);]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

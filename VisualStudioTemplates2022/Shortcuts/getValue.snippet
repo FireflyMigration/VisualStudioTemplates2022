@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Get value method</Title>
+			<Shortcut>getv</Shortcut>
+			<Description>Adds a get value method - usually to a type</Description>
+			<Author>Firefly Ltd</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+        <Literal>
+          <ID>entity</ID>
+          <ToolTip>lookup entity</ToolTip>
+          <Default>EntityType</Default>
+        </Literal>
+        <Literal>
+          <ID>memberName</ID>
+          <ToolTip>member name</ToolTip>
+          <Default>_lookupEntity</Default>
+        </Literal>
+				
+        <Literal>
+          <ID>descriptionColumn</ID>
+          <ToolTip>Description Column</ToolTip>
+          <Default>NameColumn</Default>
+        </Literal>
+        <Literal>
+          <ID>codeColumn</ID>
+          <ToolTip>Code Column</ToolTip>
+          <Default>IdColumn</Default>
+        </Literal>
+				
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[$entity$ $memberName$;
+public Text GetName()
+{
+    if ($memberName$ == null)
+        $memberName$ = new $entity$();
+    return $memberName$.GetValue($memberName$.$descriptionColumn$,$memberName$.$codeColumn$.IsEqualTo(this));$end$
+}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Handlers Add</Title>
+			<Shortcut>hand</Shortcut>
+			<Description>Adds a handler</Description>
+			<Author>Firefly Ltd</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				
+				
+				<Literal>
+					<ID>scope</ID>
+					<ToolTip>Handler Scope</ToolTip>
+					<Default>CurrentTaskOnly</Default>
+				</Literal>
+				<Literal>
+					<ID>trigger</ID>
+					<ToolTip>trigger</ToolTip>
+					<Default>System.Windows.Forms.Keys.F8</Default>
+				</Literal>
+		
+			
+				
+			</Declarations>
+			<Code Language="csharp">
+              <![CDATA[Handlers.Add($trigger$, HandlerScope.$scope$).Invokes += e => 
+            {
+                $end$
+                e.Handled = true;
+            };
+]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

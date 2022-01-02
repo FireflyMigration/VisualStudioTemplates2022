@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>BaseControl</Name>
+    <Description>Creates a base control - other controls can inherit from</Description>
+    <Icon>BaseControl.ico</Icon>
+    <TemplateID>b0e2acd7-899d-47c5-a002-c8722c92a4b1</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>BaseControl.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References/>
+	  <ProjectItem SubType="Component" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Control.cs</ProjectItem>
+	  <ProjectItem SubType="" TargetFileName="$fileinputname$.Designer.cs" ReplaceParameters="true">Control.Designer.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

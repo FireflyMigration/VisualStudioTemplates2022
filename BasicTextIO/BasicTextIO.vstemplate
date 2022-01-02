@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>BasicTextIO</Name>
+    <Description>A template to use when reading and writing text files using the Visual Designer</Description>
+    <Icon>BasicTextIO.ico</Icon>
+    <TemplateID>623bb768-d48d-4c29-ab35-19f524d8b850</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>BasicTextIO.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References/>
+	  <ProjectItem SubType="Code" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Controller.cs</ProjectItem>
+	  <ProjectItem SubType="Form" TargetFileName="TextIO\$fileinputname$.Layout.cs" ReplaceParameters="true">Layout.cs</ProjectItem>
+	  <ProjectItem SubType="" TargetFileName="TextIO\$fileinputname$.Layout.Designer.cs" ReplaceParameters="true">Layout.Designer.cs</ProjectItem>
+	  <ProjectItem SubType="Designer" TargetFileName="TextIO\$fileinputname$.Layout.resx" ReplaceParameters="true">Layout.resx</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

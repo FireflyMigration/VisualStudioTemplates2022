@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Where Add</Title>
+			<Shortcut>wh</Shortcut>
+			<Description>Adds a Where statement to a controllere</Description>
+			<Author>Firefly Ltd</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>entity</ID>
+					<ToolTip>entity to filter</ToolTip>
+					<Default>EntityName</Default>
+				</Literal>
+				<Literal>
+					<ID>column</ID>
+					<ToolTip>Column to filter</ToolTip>
+					<Default>ColumnName</Default>
+				</Literal>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>Filter Type</ToolTip>
+					<Default>IsEqualTo</Default>
+				</Literal>
+				<Literal>
+					<ID>valueToSearchFor</ID>
+					<Default>ValueToSearchFor</Default>
+				</Literal>
+			
+				
+			</Declarations>
+			<Code Language="csharp"><![CDATA[Where.Add($entity$.$column$.$type$($valueToSearchFor$$end$));]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

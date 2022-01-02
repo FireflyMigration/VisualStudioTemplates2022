@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Profiler</Title>
+			<Shortcut>prof</Shortcut>
+			<Description>Code snippet for using profiler statement</Description>
+			<Author>Firefly</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>context</ID>
+					<ToolTip>Context to use</ToolTip>
+					<Default>context</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[using(ENV.Utilities.Profiler.StartContext("$context$"))
+	{
+		$selected$ $end$
+	}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

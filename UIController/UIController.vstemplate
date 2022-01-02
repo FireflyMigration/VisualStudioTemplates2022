@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>UIController</Name>
+    <Description>UIController</Description>
+    <Icon>UIController.ico</Icon>
+    <TemplateID>b3f2d326-e32d-42f2-9c58-829d4856650a</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>UIController.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References/>
+	<ProjectItem SubType="Code" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Controller.cs</ProjectItem>
+	<ProjectItem SubType="Form" TargetFileName="Views\$fileinputname$.View.cs" ReplaceParameters="true">View.cs</ProjectItem>
+	<ProjectItem SubType="" TargetFileName="Views\$fileinputname$.View.Designer.cs" ReplaceParameters="true">View.Designer.cs</ProjectItem>
+	<ProjectItem SubType="Designer" TargetFileName="Views\$fileinputname$.View.resx" ReplaceParameters="true">View.resx</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
